@@ -10,4 +10,8 @@ class DemoApplicationTests {
 	void contextLoads() {
 	}
 
+	@Test
+	void pruebaUnitario(){
+		System.out.println("Probando");
+	}
 }
