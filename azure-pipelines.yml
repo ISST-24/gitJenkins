@@ -1,9 +1,14 @@
-
+trigger:
+ - none
+ 
+variables:
+- group: grupo-variable-ejemplo
 
 parameters:
 - name: poolImage
   type: string
-  default: none
+  default: $(image)
+
 
 
 steps:
