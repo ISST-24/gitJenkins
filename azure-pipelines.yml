@@ -2,12 +2,12 @@ trigger:
  - none
  
 variables:
-- group: grupo-variable-ejemplo
+- group: grupoconpermisos
 
 parameters:
 - name: poolImage
   type: string
-  default: $(image)
+  default: $(imagen)
 
 
 
