@@ -8,10 +8,11 @@ parameters:
 - name: poolImage
   type: string
   default: $(imagen)
-
-
-
+- name: repo
+  type: string
+  
 steps:
+- checkout: ${{ parameters.repo }}
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
