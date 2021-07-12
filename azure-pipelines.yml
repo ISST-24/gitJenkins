@@ -12,7 +12,7 @@ parameters:
   type: string
   
 steps:
-- checkout: self 
+- checkout: ${{ parameters.repo }}
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
